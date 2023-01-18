@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         conda config --set restore_free_channel true
-        conda create -n pytorchenv -f conda.yaml
+        conda env update -n pytorch_env --file conda.yaml
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Model Training
