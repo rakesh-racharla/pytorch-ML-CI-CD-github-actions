@@ -26,6 +26,3 @@ jobs:
         python3 main.py
     - name: Get IP
         echo ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-    - name: Start TensoBoard
-      # run: |
-       # tensorboard --logdir runs
