@@ -24,9 +24,6 @@ jobs:
     - name: Model Training
       run: |
         python3 main.py
-    - name: Get IP
-      run: |
-        echo ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-    - name: Start TensoBoard
-      run: |
-        tensorboard --logdir runs
+    #- name: Start TensoBoard
+     # run: |
+      #  tensorboard --logdir runs
